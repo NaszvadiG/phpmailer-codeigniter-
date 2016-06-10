@@ -12,18 +12,18 @@ function myEmail($email, $name, $subject, $body){
 	//Set this to true if SMTP host requires authentication to send email
 	$mail->SMTPAuth = true;                          
 	//Provide username and password - DO NOT CHANGE IT -    
-	$mail->Username = "vc2015_service@passerellesnumeriques.org";                 
-	$mail->Password = "vc-Service12";                           
+	$mail->Username = "email address";                 
+	$mail->Password = "password";                           
 	//If SMTP requires TLS encryption then set it
 	$mail->SMTPSecure = "tls";                           
 	//Set TCP port to connect to 
 	$mail->Port = 587;                                   
 
-	$mail->From = "vc2015_service@passerellesnumeriques.org";
+	$mail->From = "email address";
 
 
 	// HERE YOU CAN CUSTOMIZE DEPENDING YOUR GROUP/PROJECT
-	$mail->FromName = "Student Group testing email";
+	$mail->FromName = "Name";
 	$mail->addAddress($email, $name); // Define address of destination
 	$mail->isHTML(true);
 
